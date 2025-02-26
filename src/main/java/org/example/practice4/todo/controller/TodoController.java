@@ -17,7 +17,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TodoController {
 
-    private TodoService todoService;
+    private final TodoService todoService;
 
     @PostMapping("/todos")
     public ResponseEntity<TodoSaveResponseDto> save(
